@@ -1,0 +1,255 @@
+header {
+    margin: 0;
+    height: 5vw;
+    background-color: rgb(115, 115, 170);
+}
+
+
+h1 { 
+    color: white;
+    text-align:center;
+    font-size: 2vw;
+    display: inline-block;
+    width: 38%;
+}
+
+nav{
+    text-align:right;
+    display: inline-block;
+    width: 59%;
+}
+
+a{
+    color: white;
+    font-size: 1.5vw;
+    padding-left: 9px;
+    padding-right: 6px;   
+}
+
+
+footer {
+    background-color: rgb(65, 65, 115);
+    height: 28px;
+    text-align: center;
+    padding-top: 8px;  
+}
+
+
+#div-index-text{
+    position: absolute;
+    z-index: 100;
+    padding: 5vw;
+}
+
+#h2-index{
+    font-size: 5vw;
+}
+
+#p-index-greeting {
+    font-size: 2vw;
+}
+
+#img-index-photo {
+    width: 100%;
+}
+
+#img-background{
+
+    width: 100%;
+    
+}
+
+#div-about-biography {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+#h2-about {
+    font-size: 3rem;
+}
+
+#p-about {
+    font-size: 1.5rem; 
+    text-align: left;  
+    padding: 22px;
+}
+
+#div-about-moreabout{
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    text-align: center;
+    z-index: 100;
+    padding-bottom: 60px;  
+}
+
+#p-about-moreabout {
+    font-size: 2rem; 
+    text-align: left;  
+    padding-left: 90px;
+}
+
+#a-more-about {
+    display: block;
+    font-size: 1.5rem; 
+    text-align: left;  
+    color: black;
+}
+   
+#nav-about-moreabout{
+    text-align: right;  
+    padding-right: 0;
+}
+
+#section-project {
+    background-color: rgb(160, 160, 237);
+}
+
+#h2-project{
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgb(47, 47, 98);
+    color:aliceblue;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#div-project {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color:rgb(149, 149, 163);
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction:row;
+    flex-wrap: wrap;  */
+}
+
+.div-project-item {
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.project-img {
+    width: 100%;
+}
+.project-name {
+    font-size: 2rem;
+}
+
+#section-form-wrapper{
+    background-color: rgb(160, 160, 237);
+    
+}
+#h2-contact {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: rgb(47, 47, 98);
+    color:aliceblue;
+    font-size: 3rem;
+    text-align: center;
+}
+
+form {
+    margin: 0;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color:rgb(149, 149, 163);
+}
+
+.form-item {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+input {
+    width: 280px;
+    height: 38px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 28px;
+}
+
+textarea {
+    width: 285px;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.label-message{
+    text-align: center;
+}
+ button {
+    width: 120px;
+    height: 50px;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+
+@media (max-width:960px) {
+
+    #div-index-text{
+        position: absolute;
+        z-index: 100;
+        padding: 30px;
+    }
+
+
+    #div-about-biography {
+        /* position: absolute; */
+        top: 8%;
+        /* width: 100%;
+        text-align: center;
+        z-index: 100; */
+    }
+
+    #h2-about {
+        font-size: 2rem;
+    }
+
+    #p-about {
+        font-size: 2vw; 
+        text-align: left;  
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 0;
+        
+    }
+    
+}
+
+ @media (max-width:600px) {
+   
+     
+}
