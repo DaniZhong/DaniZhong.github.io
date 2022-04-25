@@ -11,6 +11,42 @@
 
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" language="JavaScript">
+    function imageresize() {
+		var w = window.innerWidth;
+		// console.log(w);
+			
+		var img = document.getElementById("img-about");
+		var imgsrc = img.getAttribute("src");
+		console.log(imgsrc);
+
+        if (w>960)
+			img.setAttribute("src", "Blackground.JPG");
+        
+		if (w<=960 & w>600) {
+			img.setAttribute("src", "Blackground Medium.JPG");
+        };
+        
+        if (w<=600) {
+		    img.setAttribute("src", "Blackground Small.JPG");
+        }; 
+        }
+		// imgsrc = img.getAttribute("src");
+		// console.log(imgsrc);
+    </script>
+
+    <script type="text/javascript" language="JavaScript">
+
+    $(document).ready(function() {
+    imageresize();    
+
+    $(window).on("resize", function() {
+    imageresize();
+    });
+    });
+    </script>
     <header>
         <h1>Dani Zhong</h1>
         <nav>
@@ -32,6 +68,10 @@
         </p>
     </div>
 
+    <img id="img-about" src="Blackground.JPG" alt="">
+
+    </section>
+
     <div id="div-about-moreabout">
         <p id="p-about-moreabout">
             Learn more about me:
@@ -42,10 +82,6 @@
             <a id="a-more-about" href="https://www.linkedin.com/in/dani-zhong-499a35234" target="_blank">My LinkedIn</a>
         </nav>
     </div>
-
-    <img id="img-background" src="Blackground.JPG" alt="">
-
-    </section>
 
     <footer>
         © Dani Zhong
