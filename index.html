@@ -1,79 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dani Zhong</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
-<body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Portfolio website</title>
+        <!-- <link rel="stylesheet" type="test/css" href="style.css"> -->
+        <link rel="stylesheet" href="style.css">
 
-    <script type="text/javascript" language="JavaScript">
-    function imageresize() {
-		var w = window.innerWidth;
-		// console.log(w);
-			
-		var img = document.getElementById("img-index");
-		var imgsrc = img.getAttribute("src");
-		console.log(imgsrc);
-
-        if (w>960)
-			img.setAttribute("src", "Profile picture.JPG");
-        
-		if (w<=960 & w>600) {
-			img.setAttribute("src", "Profile picture medium.JPG");
-        };
-        
-        if (w<=600) {
-		    img.setAttribute("src", "Profile picture small.JPG");
-        };
-        
-       
-        }
-
-		
-		// imgsrc = img.getAttribute("src");
-		// console.log(imgsrc);
-    </script>
-
-    <script type="text/javascript" language="JavaScript">
-
-    $(document).ready(function() {
-    imageresize();    
-
-    $(window).on("resize", function() {
-    imageresize();
-    });
-});
-</script>
-    <header>
-        <h1>Dani Zhong</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="project.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <section>
-        <div id="div-index-text">
-            <h2 id="h2-index">Hello, I am Dani.</h2>
-            <p id="p-index-greeting">Former auditor, financial consultant <br>now a passionate trainee full stack developer.</p>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+     <!----Home page----->
+    <div id="HomePage">
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Dani<span>Portfolio</span></h2>
+                <ul>
+                    <li><a href="#HomePage" class="nav_item">Home</a></li>
+                    <li><a href="#AboutMe" class="nav_item">About Me</a></li>
+                    <li><a href="#ProjectPage" class="nav_item">Projects</a></li>
+                    <li><a href="#ContactMe" class="nav_item">Contact Me</a></li>   
+                </ul>
+                <a href="https://www.linkedin.com/in/dani-zhong-499a35234" class="btn">LinkedIn me</a>
+            </nav>
+            <div class="content">
+                <h1>Hello, I am Dani.</h1>
+                <h3>Former auditor, consultant</h3>
+                <h3>now a graduate full stack-developer.</h3>
+            </div>
         </div>
+    </div>
+        <!----About page----->
+    <div id="AboutMe">
+        <section class = "about">
+            <div class="main">
+                <img src="https://dani-image-assets.s3.ap-southeast-2.amazonaws.com/Portfolio/about.png">
+                <div class="about-text">
+                    <h2>My Journey</h2>
+                    <h5>Graduate <span>full-stack developer</span></h5>
+                    <p>I graduated from the South China University of Technology, majoring in Accounting and Application Software, I studied software development courses including C language, data structure, software engineering concepts, SDLC, etc. I developed several projects as part of the Uni programs. After graduation I joined Deloitte and became an auditor. Then moved on to be a consultant at Jade & Company. To follow my passion for software development I joined the SHE CODES PLUS program. In this program, I learned HTML/CSS, Python, Django, JavaScript and ReactJS, taught and guided by industry mentors. The program is heavily project-based, I finished a project for each modules and just wrapped up our first group project. And I am now working toward to be a full-stack developer.</p>
+                    <!-- <button type="button">Contact Me</button> -->
+                </div>
+            </div>
+        </section>
+    </div>
+        <!----Project page----->
+    <Div id="ProjectPage">    
+        <div class="project">
+            <div class="title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>Portfolio</h5>
+                    <div class="pra">
+                        <p>
+                            This is my first experiment with “Django Magic”. I really enjoy the “Model-View-Template” (MVT) structure provided by the Django framework. It helps me to easily integrate data into the UI. I have also learned some basic implementation for user authentication, API permission, etc.
 
-        <img id="img-index" src="Profile picture.JPG" alt="Dani's photo">
-        
-
-    </section>   
-   
+                        </p>
+                        <p>
+                            <a class="button" href="https://arcane-cliffs-45688.herokuapp.com/news/">Home</a>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <h5>She Codes News </h5>
+                    <div class="pra">
+                        <p>
+                            This is my first experiment with “Django Magic”. I really enjoy the “Model-View-Template” (MVT) structure provided by the Django framework. It helps me to easily integrate data into the UI. I have also learned some basic implementation for user authentication, API permission, etc.
+                        </p>
+                        <p>
+                            <a class="button" href="https://arcane-cliffs-45688.herokuapp.com/news/">Check it out</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-regular fa-face-smile"></i>
+                    <h5>Smiles for All</h5>
+                    <div class="pra">
+                        <p>
+                            Leveraging all the tech skills I learned in the She Codes Plus program (HTML, CSS, JavaScript, React, Python, Django), I built this E2E solution “Smile for All”, providing a platform for people to ask for help for their dental needs, for supporters to make a pledge to help to restore their smiles. 
+                        </p>
+                        <p>
+                            <a class="button" href="https://protected-beach-78914.herokuapp.com/">Check it out</a>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <h5>AllyLab</h5>
+                    <div class="pra">
+                        <p>
+                            In this group project, I took on the challenge to build the E2E solution for Viewing all profiles with a filtering function and Viewing details of the individual profiles. I fully integrated my React skill and Django skill into the solution. The learning has taken my skills to a new level.
+                        </p>
+                        <p>
+                            <a class="button" href="#">Check it out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Div>
+        <!----------Contact me------------>
+    <div id="ContactMe">
+        <div class="contact-me">
+            <p>Looking forward to hearing from you!</p>
+            <a class="button-two" href="https://www.linkedin.com/in/dani-zhong-499a35234">Connect with Me</a>
+        </div>
+    </div>
+        <!------------footer---------------->
     <footer>
-        © Dani Zhong
+        <p>© Dani Zhong</p>
     </footer>
-
-</body>
-
+    
+    </body>
 </html>
